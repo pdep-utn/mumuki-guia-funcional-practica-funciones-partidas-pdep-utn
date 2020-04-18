@@ -1,0 +1,17 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: esNotaBochazo
+  inspection: HasBinding
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: aprobo
+  inspection: HasBinding
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: promociono
+  inspection: HasBinding
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: esNotaBochazo
+  inspection: Not:HasGuards
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: aprobo
+  inspection: HasUsage:esNotaBochazo
